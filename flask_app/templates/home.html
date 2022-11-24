@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boston House Pricing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!--Hey! This is the original version
+of Simple CSS Waves-->
+
+<div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header-heading flex">
+        <h1>Welcome to Boston House Pricing</h1>
+    </div>
+    <form action="{{ url_for('predict') }}" method="post">
+    <div class="inner-header flex p_white">
+        <label for="crim" class="label-gap">CRIM: </label><input type="text" name="crim" class="round-border">
+        <label for="zn" class="label-gap">ZN: </label><input type="text" name="zn" class="round-border">
+        <label for="indus" class="label-gap">INDUS: </label><input type="text" name="indus" class="round-border">
+        <label for="chas" class="label-gap">CHAS: </label><input type="text" name="chas" class="round-border">
+        <label for="nox" class="label-gap">NOX: </label><input type="text" name="nox" class="round-border">
+    </div>
+    <div class="inner-header flex p_white">
+        <label for="rm" class="label-gap">RM: </label><input type="text" name="rm" class="round-border">
+        <label for="age" class="label-gap">AGE: </label><input type="text" name="age" class="round-border">
+        <label for="dis" class="label-gap">DIS: </label><input type="text" name="dis" class="round-border">
+        <label for="rad" class="label-gap">RAD: </label><input type="text" name="rad" class="round-border">
+    </div>
+    <div class="inner-header flex p_white">
+        <label for="tax" class="label-gap">TAX: </label><input type="text" name="tax" class="round-border">
+        <label for="ptratio" class="label-gap">PTRATION: </label><input type="text" name="ptratio" class="round-border">
+        <label for="b" class="label-gap">B: </label><input type="text" name="b" class="round-border">
+        <label for="lstat" class="label-gap">LSTAT: </label><input type="text" name="lstat" class="round-border">
+    </div>
+    <div class="inner-header flex">
+        <button type="submit" value="Predict" class="sub-button">PREDICT</button>
+    </div>
+    </form>
+    <div class="inner-header flex">
+        <h2>PREDICTION: {{ prediction_text }}</h2>
+    </div>
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+    
+    <!--Content starts-->
+    <div class="content flex">
+      <p>Made by Aryan Ramani</p>
+    </div>
+    <!--Content ends-->
+</body>
+</html>
