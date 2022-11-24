@@ -10,7 +10,7 @@
 
 ### Steps
 
-1. Read Data
+1. Read Data(housing.csv)
 2. Exploratory Data Analysis (Boston_Housing.ipynb)
 3. Model Creation (boston_lm.pkl)
 4. Web Application Development (app.py & flask_app)
