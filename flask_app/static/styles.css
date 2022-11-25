@@ -21,11 +21,21 @@ p {
   font-size:14px;
   color: #333333;
 }
+a {
+  color: #333333;
+  text-decoration: none;
+}
 .p_white {
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
   font-size:16px;
   color: #ffffff;
+}
+
+.socials {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
 }
 
 .header {
@@ -34,7 +44,17 @@ p {
   /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
   color:white;
   background-color: #21D4FD;
-background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 65%);
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 65%);
+
+}
+.header-about {
+  height:100vh;
+  position:relative;
+  text-align:center;
+  /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
+  color:white;
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 65%);
 
 }
 
@@ -92,13 +112,17 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 65%);
   font-size: 16px;
 }
 
+.round-border:hover{
+  transform: scale(1.05);
+}
+
 .label-gap {
   margin-left: 50px;
 }
 
 .content {
   position:relative;
-  height:20vh;
+  height:5vh;
   text-align:center;
   background-color: white;
 }
